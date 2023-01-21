@@ -13,6 +13,29 @@ body {
   grid-template-rows:  100px 1fr 200px;
 
 }
+
+#title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  align-self: center;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  
+}
+
+.button-panel {
+  background-color:rgb(137, 137, 137);
+  width: 40%;
+  height: 40%;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+}
 .grid {
   display: grid;
   grid-template-columns:  repeat(16, minmax(10px, 1fr));
