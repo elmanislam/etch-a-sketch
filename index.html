@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sliders.css">
+
   <script src="javascript.js" defer></script>
   <title>Etch-A-Sketch</title>
 </head>
 <body>
   <div class="container">
     <div id="title">Edgy Sketchy</div>
-    <div class="button-panel">Button panel</div>
+    <div class="button-panel">
+
+      <div class="slider">
+        <input type="range" id="boxInput" min="10" max="80" value="16" oninput="rangeValue.innerText = `${this.value} x ${this.value}`">
+        <p id="rangeValue">16 x 16</p>
+        </div>
+
+    </div>
     <div class="grid">
     </div>
   </div>
